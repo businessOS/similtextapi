@@ -1,5 +1,4 @@
 
-// import { Toaster } from '@/components/ui/toast'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/NavBar'
