@@ -1,10 +1,12 @@
 
+import NavBar from '@/components/NavBar'
+import { Toaster } from '@/components/ui/toast'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
-import NavBar from '@/components/NavBar'
+
+import MobileMenu from '@/components/MobileMenu'
 import Providers from '@/components/Providers'
 import { cn } from '@/lib/utils'
-import { Toaster } from '@/ui/toast'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +25,7 @@ export default function RootLayout({
           <NavBar />
           <Toaster position='bottom-right' />
 
-          {/* <MobileMenu /> */}
+          <MobileMenu />
 
           <main>{children}</main>
         </Providers>
